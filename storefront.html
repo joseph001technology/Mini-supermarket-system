@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Supermarket — Online Store</title><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/storefront.css">
+</head>
+<body class="storefront-body">
+<div class="store-topline"><span>DEMO STOREFRONT · SAMPLE PRODUCTS ONLY</span><b>Created by Joseph Ngigi Kiarie · 0742906228</b></div>
+<header class="store-header market-header">
+<a class="store-logo" href="storefront.html"><span class="brand-mark">S</span><span><strong id="storeName">Supermarket</strong><small>EVERYDAY VALUE, ALL IN ONE PLACE</small></span></a>
+<label class="market-search">⌕ <input id="storeSearch" placeholder="Search products, brands and categories"><button type="button" id="storeSearchButton">Search</button></label>
+<nav><a href="#shop">Products</a><a href="#offers">Deals</a><a href="#contact">Help</a></nav>
+<a href="cart.html" class="cart-link">🛒 Cart <span id="storeCartCount">0</span></a>
+</header>
+<div class="category-nav" id="topCategories"></div>
+<main class="store-main">
+<section class="market-hero"><div class="hero-copy"><span class="hero-kicker">BIG VALUE · LOCAL CONVENIENCE</span><h1>Everything you need.<br><em>Prices you'll love.</em></h1><p>Browse groceries, home essentials, personal care, stationery and more in one bright, simple supermarket.</p><div class="hero-buttons"><a class="button primary" href="#shop">Shop now →</a><a class="button hero-secondary" href="#offers">View today's deals</a></div><div class="hero-proof"><b>35+</b> demo products <span>•</span> <b>8</b> categories <span>•</span> Easy cart</div></div><div class="hero-collage"><div class="hero-photo"></div><div class="deal-bubble"><small>DEMO DEALS</small><strong>Save more</strong><span>on everyday essentials</span></div></div></section>
+<section class="store-benefits"><div><span>✓</span><strong>Wide selection</strong><small>Everyday products across key categories</small></div><div><span>⚡</span><strong>Quick shopping</strong><small>Search, browse and add in seconds</small></div><div><span>★</span><strong>Featured deals</strong><small>Promotions displayed clearly</small></div><div><span>🛒</span><strong>Dedicated cart</strong><small>Review your order on its own page</small></div></section>
+<section id="offers" class="store-section deal-section"><div class="section-heading"><div><span class="eyebrow">LIMITED-TIME DEMO OFFERS</span><h2>Today's top deals</h2></div><a href="#shop" class="see-all">See all products →</a></div><div id="storeOffers" class="offer-grid"></div></section>
+<section class="promo-strip"><div><span>HOUSEHOLD</span><strong>Stock up & save</strong><small>Useful essentials for every room.</small></div><div><span>GROCERIES</span><strong>Pantry favourites</strong><small>Daily staples at a glance.</small></div><div><span>PERSONAL CARE</span><strong>Everyday care</strong><small>Simple picks for your routine.</small></div></section>
+<section id="shop" class="store-section"><div class="section-heading"><div><span class="eyebrow">EXPLORE THE AISLES</span><h2>Popular products</h2></div><span class="muted">Click a product for details</span></div><div id="storeCategories" class="category-pills"></div><div id="storeProducts" class="store-product-grid"></div></section>
+<section id="contact" class="contact-panel"><div><span class="eyebrow">DEMO SUPERMARKET</span><h2>A complete storefront preview.</h2><p>This storefront is connected to the same browser data as the retail dashboard so catalogue and category changes appear here too.</p></div><div class="contact-details"><p><span>⌖</span> 12 Market Lane, Nairobi</p><p><span>☎</span> +254 700 000 000</p><p><span>◷</span> Mon–Sat, 8:00 AM–8:00 PM</p><small>These business details are sample data.</small></div></section>
+<section class="store-disclaimer"><strong>DEMO / DUMMY APP</strong><p>This is a dummy supermarket application created for demonstration and coursework purposes. All products, prices, offers, customers, contacts, orders and payment flows shown are fictional/sample data. No real order or payment is processed.</p><b>Created by Joseph Ngigi Kiarie · 0742906228</b></section>
+</main>
+<footer class="store-footer"><span class="store-logo"><span class="brand-mark">S</span><strong id="footerStoreName">Supermarket</strong></span><span>© 2026 Supermarket · Demo storefront</span><strong class="footer-creator">Joseph Ngigi Kiarie · 0742906228</strong><a href="index.html">POS dashboard ↗</a></footer>
+<div id="productDetail" class="product-detail-overlay" hidden><section class="product-detail-card"><button id="closeProductDetail" class="icon-button detail-close" aria-label="Close product details">×</button><div id="productDetailContent"></div></section></div>
+<div id="storeToast" class="toast-root" aria-live="polite"></div>
+<script src="js/data.js"></script><script src="js/storefront.js"></script>
+</body></html>
